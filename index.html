@@ -17,18 +17,18 @@
 
 <body>
 
-  <div class="main-logo" role="img">
-    <img src="./images/logo.svg" alt="main logo">
+  <div class="main-logo" role="logo"">
+    <img src=" ./images/logo.svg" alt="main logo">
   </div>
   <div class="main" role="main">
     <div class="calculate-section">
       <form action="/" class="form">
         <label for="bill" class="little-icon little-icon__bill">
-          <p>Bill</p>
+          <span class="h3">Bill</span>
           <input type="number" name="bill" id="bill" required placeholder="0" min="0" class="input input__bill">
         </label>
         <div class="tip-selection">
-          <p class="h3-select-tip">Select Tip %</p>
+          <span class=" h3 h3-select-tip">Select Tip %</span>
           <input type="button" value="5%" class="select-tip">
           <input type="button" value="10%" class="select-tip">
           <input type="button" value="15%" class="select-tip">
@@ -42,7 +42,7 @@
 
       </form>
       <label for="people" class="little-icon little-icon__people">
-        <p class="h3-people">Number of People</p>
+        <span class="h3-people h3">Number of People</span>
         <span class="error">Can't be zero</span>
         <input type="number" name="people" id="people" placeholder="1" min="1" required class="input input__people">
       </label>
