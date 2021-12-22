@@ -16,63 +16,66 @@
 </head>
 
 <body>
+  <div class="container" role="main">
 
-  <div class="main-logo" role="article">
-    <img src=" ./images/logo.svg" alt="main logo">
-  </div>
-  <div class="main" role="main">
-    <div class="calculate-section">
-      <form action="/" class="form">
-        <label for="bill" class="little-icon little-icon__bill">
-          <span class="h3">Bill</span>
-          <input type="number" name="bill" id="bill" required placeholder="0" min="0" class="input input__bill">
+
+
+    <div class="main-logo">
+      <img src="./images/logo.svg" alt="main logo">
+    </div>
+    <div class="main">
+      <div class="calculate-section">
+        <form action="/" class="form">
+          <label for="bill" class="little-icon little-icon__bill">
+            <h1>Bill</h1>
+            <input type="number" name="bill" id="bill" required placeholder="0" min="0" class="input input__bill">
+          </label>
+          <div class="tip-selection">
+            <h3 class="h3-select-tip">Select Tip %</h3>
+            <input type="button" value="5%" class="select-tip">
+            <input type="button" value="10%" class="select-tip">
+            <input type="button" value="15%" class="select-tip">
+            <input type="button" value="25%" class="select-tip">
+            <input type="button" value="50%" class="select-tip">
+
+
+            <input value="" placeholder="Custom" type="number" min="0" step="1" class="select-tip select-tip__custom">
+          </div>
+
+
+        </form>
+        <label for="people" class="little-icon little-icon__people">
+          <h3 class="h3-people">Number of People</h3>
+          <span class="error">Can't be zero</span>
+          <input type="number" name="people" id="people" placeholder="1" min="1" required class="input input__people">
         </label>
-        <div class="tip-selection">
-          <span class=" h3 h3-select-tip">Select Tip %</span>
-          <input type="button" value="5%" class="select-tip">
-          <input type="button" value="10%" class="select-tip">
-          <input type="button" value="15%" class="select-tip">
-          <input type="button" value="25%" class="select-tip">
-          <input type="button" value="50%" class="select-tip">
-
-
-          <input value="" placeholder="Custom" type="number" min="0" step="1" class="select-tip select-tip__custom">
-        </div>
-
-
-      </form>
-      <label for="people" class="little-icon little-icon__people">
-        <span class="h3-people h3">Number of People</span>
-        <span class="error">Can't be zero</span>
-        <input type="number" name="people" id="people" placeholder="1" min="1" required class="input input__people">
-      </label>
-    </div>
-
-
-    <div class="result-section">
-
-      <div class="amount tip-amount">
-        <div class="label">
-          <span class="label-title">Tip Amount</span>
-          <span class="per-person">/ person</span>
-        </div>
-
-        <span class="tag tag__tip">$0.00</span>
       </div>
-      <div class="amount total-amount">
-        <div class="label">
-          <span class="label-title">Total</span>
-          <span class="per-person">/ person</span>
-        </div>
 
-        <span class="tag tag__total">$0.00</span>
+
+      <div class="result-section">
+
+        <div class="amount tip-amount">
+          <div class="label">
+            <span class="label-title">Tip Amount</span>
+            <span class="per-person">/ person</span>
+          </div>
+
+          <span class="tag tag__tip">$0.00</span>
+        </div>
+        <div class="amount total-amount">
+          <div class="label">
+            <span class="label-title">Total</span>
+            <span class="per-person">/ person</span>
+          </div>
+
+          <span class="tag tag__total">$0.00</span>
+        </div>
+        <input type="button" value="RESET" class="reset-btn reset-btn__inactive">
       </div>
-      <input type="button" value="RESET" class="reset-btn reset-btn__inactive">
     </div>
   </div>
-
   <script src="./script.js"></script>
-  <h1>hidden header</h1>
+
 </body>
 
 </html>

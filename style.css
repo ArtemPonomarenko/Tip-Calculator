@@ -20,10 +20,6 @@ body {
   margin: 0 auto 2.6rem;
 }
 
-h1 {
-  display: none;
-}
-
 .main {
   width: 100%;
   max-width: 920px;
@@ -152,7 +148,8 @@ input::-webkit-inner-spin-button {
   margin-top: 35px;
 }
 
-.h3 {
+h3,
+h1 {
   color: #5e7a7d;
   font-size: 16px;
   font-weight: 700;
